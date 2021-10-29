@@ -39,7 +39,7 @@ const actualizarProducto = (req, res) => {
 
 const borrarProducto = (req, res) => {
   const {id} = req.params;
-  productos.splice(i, 1);
+  productos.splice(id, 1);
   res.status(200).json({
     message: "Producto eliminado",
     statusCode: 200
