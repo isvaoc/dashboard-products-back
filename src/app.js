@@ -1,3 +1,4 @@
+const cors = require('cors')
 // traer el errorMiddleware
 const errorMiddleware = require('./middlewares/errorMiddleware')
 
@@ -19,6 +20,7 @@ app.set('PORT', PORT)
 // MIDDLEWARE
 // para que el servidor acepte cosas de tipo json, tenemos que poner un middleware
 app.use(express.json())
+app.use(cors())
 
 // RUTAS
 // --> se mandó a products.routes.js el app.get
