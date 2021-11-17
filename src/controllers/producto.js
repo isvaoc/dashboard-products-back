@@ -86,5 +86,7 @@ function actualizarProducto(i, marca, producto, precio, existencia, status) {
 function crearProducto(marca, producto, precio, existencia, status) {
   const nuevoProducto = new Producto(marca, producto, precio, existencia, status);
   productos.push(nuevoProducto);
-}*/
+}
+
+*/
 
