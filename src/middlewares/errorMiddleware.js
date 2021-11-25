@@ -2,7 +2,7 @@ const boom =  require('@hapi/boom')
 
 const errorMiddleware = (error, req, res, next) => {
     let errorObject = {}
-    if (!error.isBoom){
+    if (error.isBoom){
         const {output:{statusCode, payload}} = error
         errorObject = {statusCode, ...payload}
     } else{
