@@ -12,6 +12,7 @@ const router = Router()
 router.post('/', validateMiddleware(crearProductoEsquema, 'body') , crearProducto)
 router.patch('/:id', validateMiddleware(actualizarProductoEsquema, 'body'), actualizarProducto)
 router.get('/', llamarProductos)
+//router.get('/:id', llamarProductos) llamar solo un grupo de la data
 router.delete('/:id', borrarProducto)
 
 module.exports = router
